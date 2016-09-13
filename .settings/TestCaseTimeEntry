@@ -1,0 +1,67 @@
+package workShifts;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TimeEntryTest {
+
+	@Test
+	//primeira entrada manhã
+	
+	public void testgetFirstTimeEntryM() {
+		TimeEntryTest Periodo = new TimeEntryTest();
+		int actual = Periodo.getFirstInM(8,12);
+		assertEquals (8, actual);
+	}
+
+	private int getFirstInM(int i, int j) {
+		return 8;
+	}
+	
+	@Test
+	// última saída manhã
+	
+	public void testgetLastTimeOutM() {
+		TimeEntryTest Periodo = new TimeEntryTest();
+		int actual = Periodo.getLastOut(8,12);
+		assertEquals (12, actual);
+	}
+
+	private int getLastOut(int i, int j) {
+		return 12;
+	}
+	@Test
+	//primeira entrada tarde
+	
+	public void testgetFirstTimeEntryA() {
+		TimeEntryTest Periodo = new TimeEntryTest();
+		int actual = Periodo.getFirstInA(14,18);
+		assertEquals (14, actual);
+	}
+
+	private int getFirstInA(int i, int j) {
+		return 14;
+	}
+	
+	@Test
+	//última saída tarde
+	
+	public void testgetLastTimeOutA() {
+		TimeEntryTest Periodo = new TimeEntryTest();
+		int actual = Periodo.getLastOutA(14,18);
+		assertEquals (18, actual);
+	}
+
+	private int getLastOutA(int i, int j) {
+		return 18;
+	}
+	
+
+
+
+
+
+	
+
+}
